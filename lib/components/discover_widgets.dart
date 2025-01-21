@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_task/components/decorated_circle.dart';
 import 'package:ui_task/components/slidable_containers.dart';
+import 'package:ui_task/pages/feed.dart';
 
 Widget recentlyViewed(context) {
   return Column(
@@ -15,10 +16,18 @@ Widget recentlyViewed(context) {
               style: Theme.of(context).textTheme.bodyMedium,
             ),
           ),
-          const Icon(
-            Icons.arrow_forward_outlined,
-            color: Colors.white,
-            fill: 0.2,
+          InkWell(
+            child: const Icon(
+              Icons.arrow_forward_outlined,
+              color: Colors.white,
+              fill: 0.2,
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Feed()),
+              );
+            },
           ),
         ],
       ),
@@ -57,7 +66,7 @@ Widget exploreByTopic(context, topics) {
           itemCount: topics.length,
         ),
       ),
-      SizedBox(
+      const SizedBox(
         height: 10,
       ),
       SizedBox(

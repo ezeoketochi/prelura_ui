@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class DecoratedCircle extends StatelessWidget {
-  const DecoratedCircle({super.key});
+  final double width;
+  final double height;
+  const DecoratedCircle({super.key, this.width = 66, this.height = 66});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 66, // Adjust size as needed
-      height: 66,
+      width: width, // Adjust size as needed
+      height: height,
       decoration: const BoxDecoration(
         shape: BoxShape.circle,
         gradient: SweepGradient(

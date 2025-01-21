@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_task/pages/discover.dart';
+import 'package:ui_task/pages/feed.dart';
 
 void main() {
   runApp(const MyApp());
