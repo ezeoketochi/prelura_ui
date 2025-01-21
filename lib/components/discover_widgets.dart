@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ui_task/components/decorated_circle.dart';
 import 'package:ui_task/components/slidable_containers.dart';
 
-Widget RecentlyViewed(context) {
+Widget recentlyViewed(context) {
   return Column(
     children: [
       Row(
@@ -34,7 +34,7 @@ Widget RecentlyViewed(context) {
   );
 }
 
-Widget ExploreByTopic(context, topics) {
+Widget exploreByTopic(context, topics) {
   return Column(
     children: [
       const Align(
@@ -76,7 +76,7 @@ Widget ExploreByTopic(context, topics) {
   );
 }
 
-Widget Popular(context, topics) {
+Widget popular(context, topics) {
   return Column(
     children: [
       const Align(
@@ -113,7 +113,7 @@ Widget Popular(context, topics) {
   );
 }
 
-Widget ServiceSpotlight(context, topics) {
+Widget serviceSpotlight(context, topics) {
   return Column(
     children: [
       const Padding(
